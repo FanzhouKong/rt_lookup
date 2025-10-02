@@ -118,8 +118,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--library_name', type=str)
     parser.add_argument('--column_name', type=str)
-    parser.add_argument('--msp_dir', type=str)
-    parser.add_argument('--prediction_dir', type=str)
+    parser.add_argument('--msp_dir', type=str, default = '/quobyte/metabolomicsgrp/fanzhou/raw_msp')
+    parser.add_argument('--prediction_dir', type=str, default = '/quobyte/metabolomicsgrp/fanzhou/predictions')
     args = parser.parse_args()
     library_name = args.library_name
     column_name = args.column_name
